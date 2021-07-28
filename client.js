@@ -1,6 +1,6 @@
 // A reference to Stripe.js initialized with a fake API key.
 // Sign in to see examples pre-filled with your key.
-var stripe = Stripe("pk_test_51JHowoBQ7QdlTPo6iOlloCnXBK0KrnNljWen7Kq0QvO9YGhvgKqEwlI6m8E5Nd0bDAcoRRyIwAm1n7bg9G9jKOj600duS7EHn0");
+var stripe = Stripe("<publishabel_key>");
 
 // The items the customer wants to buy
 var purchase = {
@@ -15,7 +15,7 @@ fetch("http://localhost:8880/v1/training-session", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
-    Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjoiQ2FzdHJvIiwibGFzdE5hbWUiOiJIYW1pbHRvbmUiLCJyb2xlIjoiYWRtaW4iLCJzdGF0dXMiOiJhY3RpdmUiLCJ2ZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNjI3MzkxNDAyLCJleHAiOjE2Mjc0Nzc4MDJ9.DtchpbzT_lu_EW3epfVQrO276qLyiA2twZYwS90GIac"
+    Authorization: "Bearer <access_Token>"
   },
   body: JSON.stringify(purchase)
 })
